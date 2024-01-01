@@ -3,8 +3,12 @@ body {
     color: white;
     background-color: black;
 }
+nav{
 
+        font-family: 'CircularStd-Black', sans-serif;
+        color: white;
 
+}
 .link-card a{
     display: flex;
     align-items: center;
@@ -26,8 +30,7 @@ a{
 h2{
     font-size: medium;
 }
-body,
-html {
+body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -37,14 +40,17 @@ body {
     display: flex;
 }
 
-.secao-esquerda,
-.secao-central,
-.secao-direita {
+.secao-esquerda, .secao-central, .secao-direita {
     height: calc(100vh - 50px);
     overflow-y: auto;
     margin: 5px;
     padding: 20px;
     border-radius: 10px;
+    overflow: hidden;
+}
+.secao-central:hover, .secao-direita:hover, .secao-esquerda:hover{
+    animation-delay: 50ms;
+    overflow-y: auto;
 }
 
 .secao-central {
@@ -53,8 +59,7 @@ body {
     background: linear-gradient(to bottom, #706e6e 0%, #575555 2%, #2b2a2a 12%, #1a1919 100%);
 }
 
-.secao-esquerda,
-.secao-direita {
+.secao-esquerda, .secao-direita {
     max-width: 90%;
     width: 15%;
     background-color: rgb(41, 39, 39);
