@@ -1,21 +1,31 @@
 :root{
     --branco: aliceblue;
-    --fundoPadrão: #1a1919
+    --fundoPadrão: #1a1919;
+    --fundoCard: #383838;
+}
+.link-card{
+    display: flex;
+    gap: 10px;
 }
 .link-card a{
     display: flex;
     align-items: center;
     text-decoration: none;
-    gap: 15px;
     font-family: 'CircularStd-bold', sans-serif;
-
     color: var(--branco);
-    background-color: rgb(56, 56, 56);
+    background-color: var(--fundoCard);
+    
     height: 40px;
     width: 150px;
     border-radius: 10px;
     padding: 5px;
+    gap: 10px;
 }
+.link-card img {
+    width: 40px;
+    height: 40px;
+}
+
 .card-maior a{
     display: flex;
     align-items: center;
@@ -24,23 +34,21 @@
     font-family: 'CircularStd-bold', sans-serif;
 
     color: white;
-    background-color: rgb(82, 79, 79);
+    background-color: var(--fundoCard);
     height: auto;
     width: min-content;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 .card-maior img{
     width: 128px;
     height: 128px;
     border-radius: 10px;
-    margin: 10px;
 }
-.link-card img {
-    width: 40px;
-    height: 40px;
+.card-maior h3{
+    margin-bottom: 0px;
 }
-.link-card, .card-maior {
-    display: flex;
-    gap: 10px;
+.card-maior p{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
