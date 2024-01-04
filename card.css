@@ -14,7 +14,7 @@
     font-family: 'CircularStd-bold', sans-serif;
     color: var(--branco);
     background-color: var(--fundoCard);
-    
+
     height: 40px;
     width: 150px;
     border-radius: 10px;
@@ -26,6 +26,10 @@
     height: 40px;
 }
 
+.card-maior{
+    display: flex;
+    gap: 10px;
+}
 .card-maior a{
     display: flex;
     align-items: center;
