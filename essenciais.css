@@ -49,6 +49,9 @@ body {
     max-width: 90%;
     background: linear-gradient(to bottom, #706e6e 0%, #575555 2%, #2b2a2a 12%, var(--fundoPadrão) 100%);
 }
+.secao-direita{
+    text-align: center;
+}
 
 .secao-esquerda, .secao-direita {
     max-width: 90%;
@@ -73,18 +76,33 @@ body {
 .container-carrossel {
     width: 100%;
     overflow: hidden;
-    border-radius: 10px;
 }
 .trilha-carrossel {
     display: flex;
     transition: transform 0.75s ease;
 }
-img {
+.trilha-carrossel img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    border-radius: 10px 10px;
 }
 a:hover{
     transition: 0.2s ease;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.03);
+    transform: scale(1.05);
+}
+.icons a img{
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-left: auto;
+    padding-right: auto;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    gap: 10px;
 }
