@@ -1,3 +1,13 @@
+@media only screen and (max-width: 768px) {
+    .secao-direita {
+      display: none;
+    }
+    .secao-esquerda{
+        display: none;
+    }
+  }
+
+
 :root{
     --branco: aliceblue;
     --fundoPadrão: #1a1919
@@ -30,7 +40,6 @@ body, html {
 body {
     display: flex;
 }
-
 .secao-esquerda, .secao-central, .secao-direita {
     height: calc(100vh - 50px);
     overflow-y: auto;
@@ -45,6 +54,7 @@ body {
 }
 
 .secao-central {
+    flex-wrap: wrap;
     flex-grow: 1;
     max-width: 90%;
     background: linear-gradient(to bottom, #706e6e 0%, #575555 2%, #2b2a2a 12%, var(--fundoPadrão) 100%);
@@ -58,6 +68,7 @@ body {
     width: 15%;
     background-color: var(--fundoPadrão);
 }
+
 ::-webkit-scrollbar {
     width: 7px;
 }
