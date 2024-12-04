@@ -5,6 +5,12 @@
     .secao-esquerda{
         display: none;
     }
+    h1{
+        text-align: center;
+    }
+    #tabelaSenhas{
+        margin-right: 0 !important;
+    }
   }
 
 
